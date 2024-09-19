@@ -7,27 +7,27 @@ class Marine {
 	// 멤버 변수
 	// 객체의 내부적 성질 및 상태: private
 	int hp;								// 체력
-	int coord_x, coord_y;				// 위치
+	int coord_x, coord_y;						// 위치
 	int damage;							// 공격력
-	bool is_dead;						// 사망
+	bool is_dead;							// 사망
 
 public:
 	
 	// 생성자, 멤버 함수
 	Marine();							// 디폴트 생성자
-	Marine(int x, int y);				// x, y 좌표에 마린 생성
+	Marine(int x, int y);						// x, y 좌표에 마린 생성
 	
 	// 멤버 함수
-	int attack();						// 데미지 리턴
-	void be_attacked(int damage_earn);	// 입는 데미지
-	void move(int x, int y);			// 새로운 위치
+	int attack();							// 데미지 리턴
+	void be_attacked(int damage_earn);				// 입는 데미지
+	void move(int x, int y);					// 새로운 위치
 	
 
-	void show_stat();					// 상태 
+	void show_stat();						// 상태 
 };
 
 // 여기서부터 객체 변수(인스턴스 변수)
-Marine::Marine() {  // Marine 클래스의 객체 생성
+Marine::Marine() {  							// Marine 클래스의 객체 생성
 	// 디폴트 생성자 초기화
 	hp = 50;
 	coord_x = coord_y = 0;
