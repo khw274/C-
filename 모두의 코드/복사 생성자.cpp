@@ -48,7 +48,7 @@ int main() {
 	Photon_Cannon pc1(3, 3);  // pc1 객체 생성, 생성자 오버로딩
 	Photon_Cannon pc2(pc1);   // 인자 pc1을 넘겨 복사 생성자 호출
 	Photon_Cannon pc3 = pc2;  // 인자 pc2를 넘겨 pc2 복사 생성자 호출
-				  // =  Photon_Cannon pc3(pc2);
+				  // = Photon_Cannon pc3(pc2);
 
 	// 복사 생성자는 오직 '생성' 시에만 호출
 
